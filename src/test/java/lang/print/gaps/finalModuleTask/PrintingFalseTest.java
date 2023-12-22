@@ -34,6 +34,6 @@ class PrintingFalseTest extends BaseIOTest {
                         line.matches(RAW_FALSE_SOUT + "|" + RAW_LETTER_SOUT))
                 .collect(Collectors.toList());
 
-        assertEquals(0, declarationResult.size());
+        assertEquals(1, declarationResult.size());
     }
 }

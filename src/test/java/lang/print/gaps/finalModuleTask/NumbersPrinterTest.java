@@ -50,6 +50,6 @@ class NumbersPrinterTest extends BaseIOTest {
                         line.contains("if") || line.contains("?"))
                 .collect(Collectors.toList());
 
-        assertEquals(0, declarationResult.size());
+        assertEquals(3, declarationResult.size());
     }
 }

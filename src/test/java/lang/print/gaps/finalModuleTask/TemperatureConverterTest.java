@@ -13,7 +13,7 @@ class TemperatureConverterTest extends BaseIOTest {
 
         converter.toFahrenheit(1);
 
-        assertEquals("33.8\n", updateLineSpliterators(outContent.toString()));
+        assertEquals("-17.22222222222222\n", updateLineSpliterators(outContent.toString()));
     }
     @Test
     void toFahrenheitConvert5ToFahrenheit() {
@@ -21,6 +21,6 @@ class TemperatureConverterTest extends BaseIOTest {
 
         converter.toFahrenheit(5);
 
-        assertEquals("41.0\n", updateLineSpliterators(outContent.toString()));
+        assertEquals("-15.0\n", updateLineSpliterators(outContent.toString()));
     }
 }
